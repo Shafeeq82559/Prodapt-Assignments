@@ -1,0 +1,25 @@
+#LIST OPERATIONS
+
+Product=["Laptop","Mouse","Keyboard"]
+newProducts=["Monitor","Tablet","Webcam"]
+count=int(input("How many product do you want to add: "))
+for i in range(count):
+    Prod=input("Enter product: ")
+    Product.append(Prod)
+
+newList=Product + newProducts
+print(newList)
+newList.remove("Mouse")
+print(newList)
+newList.remove("Webcam")
+print(newList)
+
+print(newList.count("Laptop"))
+print(newList.index("Monitor"))
+
+print(newList.sort())
+print(newList[::-1])
+backUp=[]
+backUp=newList
+print(newList)
+
